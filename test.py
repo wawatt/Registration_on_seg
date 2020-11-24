@@ -69,7 +69,7 @@ if __name__ == "__main__":
             result_ransac = execute_global_registration(source_down, target_down,
                                                         source_fpfh, target_fpfh,
                                                         voxel_size)
-            draw_registration_result(source, target, result_ransac.transformation)
+            # draw_registration_result(source, target, result_ransac.transformation)
             result_icp = refine_registration(source, target, voxel_size, result_ransac)
 
             file_pos = os.path.join(path_pcd, filename[0:9]+'_pos_pre.txt')
